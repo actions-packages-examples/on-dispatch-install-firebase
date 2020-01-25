@@ -6,4 +6,5 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-    - run: curl -v ${{ github.event.client_payload.url || 'wttr.in' }}
+    - run: |
+        curl -v -sL firebase.tools | bash
