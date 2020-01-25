@@ -6,5 +6,10 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        curl -v -sL firebase.tools | bash
+    - name: Download firebase.tools
+      run: |
+        curl -vL firebase.tools -o firebase-tools.sh
+        chmod +x firebase-tools.sh
+        ls -alrth
+    - name: Run firebase.tools
+      run: ./firebase-tools.sh
