@@ -1,3 +1,3 @@
-# on-dispatch-curl
+# on-dispatch-install-firebase
 
-Example for sending a repository dispatch and specifying a URL to `curl` in the virtual environment.
+Example for sending a repository dispatch to install firebase in Actions.
